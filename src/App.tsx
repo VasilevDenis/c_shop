@@ -1,21 +1,22 @@
-import './App.css'
-import item from './item'
-import ShopItemFunc from './ShopItemFunc'
+import { Component } from 'react';
+import './App.css';
+import Item from './item';
+import ShopItemFunc from './ShopItemFunc';
 
-function App() {
-  
-  return (
-    <div className="container">
-      <div className="background-element">
-      </div>
-      <div className="highlight-window">
-        <div className='highlight-overlay'></div>
-      </div>
-      <div className="window">
-        <ShopItemFunc item={item} />
-      </div>
-    </div>
-  )
+class App extends Component {
+    render() {
+        return (
+            <div className="container">
+                <div className="background-element"></div>
+                <div className="highlight-window">
+                    <div className='highlight-overlay'></div>
+                </div>
+                <div className="window">
+                    <ShopItemFunc item={Item} />
+                </div>
+            </div>
+        );
+    }
 }
 
-export default App
+export default App;

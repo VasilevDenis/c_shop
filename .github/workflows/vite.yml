@@ -1,4 +1,4 @@
-name: F_shop
+name: C_shop
 
 on: [push, pull_request]
 
